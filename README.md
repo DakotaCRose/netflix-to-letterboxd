@@ -9,7 +9,7 @@ Netflix lets you download your profile’s entire history as a `.csv` file.
 You can upload that file directly to a Letterboxd list and it will import all of the **movie titles** that Letterboxd has in its database.  
 
 What you’ll quickly notice is that **shows don’t import**.  
-That’s because Netflix stores them as:  Show title: Episode title  (e.g., "DEATH NOTE: Death Note: 1.28" instead of "DEATH NOTE", "Breaking Bad: Season 5: Felina" instead of "Breaking Bad etc...).
+That’s because Netflix stores them as:  Show title: Episode title  (e.g., "DEATH NOTE: Death Note: 1.28" instead of "DEATH NOTE", "Breaking Bad: Season 5: Felina" instead of "Breaking Bad" etc...).
 
 Letterboxd doesn’t recognize these as shows, so they’re skipped.  
 
@@ -18,6 +18,7 @@ Letterboxd doesn’t recognize these as shows, so they’re skipped.
 - Strips out the episode title and keeps only the **series name**.
 - Removes duplicates so each show only appears once.
 - Outputs a `.txt` file ready to import into Letterboxd.
+- I converted the `.txt` file to `.csv` file without seeing if the `.txt` worked. I just stuck to what I knew worked.
 
 ---
 
@@ -54,17 +55,14 @@ This will add all the shows you’ve watched.
 
 ⚠️ Note: Some titles still won’t import because Letterboxd simply doesn’t have them in its database.
 
-Example
-
-Input:
-
+Example Input:
 American Primeval: Limited Series: Episode 4, 1/26/2025
 Cunk on Life, 1/19/2025
 American Primeval: Limited Series: Episode 1, 1/18/2025
 
-
-After import (step 3) → Cunk on Life is already in Letterboxd.
-After script (step 4) → American Primeval is added.
+Outputs:
+After import (**step 3**) → Cunk on Life is already in Letterboxd.
+After script (**step 4**) → American Primeval is added.
 
 Final combined list on Letterboxd includes both movies and shows.
 
