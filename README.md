@@ -36,15 +36,15 @@ Clone the repo:
 ```bash
 git clone https://github.com/your-username/netflix-to-letterboxd.git
 cd netflix-to-letterboxd
+```
 
-
-
+```bash
 python script.py ViewingActivity.csv
+```
 
-
-
+```bash
 series_only.txt
-
+```
 
 Import to Letterboxd
 
