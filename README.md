@@ -30,8 +30,6 @@ Letterboxd doesn’t recognize these as shows, so they’re skipped.
 4. Next, run this script to generate a cleaned list of **series names**.  
    - This fills in the shows that didn’t import the first time.  
 
----
-
 ## Getting Started
 
 Clone the repo:
@@ -39,9 +37,14 @@ Clone the repo:
 git clone https://github.com/your-username/netflix-to-letterboxd.git
 cd netflix-to-letterboxd
 
+
+
 python script.py ViewingActivity.csv
 
+
+
 series_only.txt
+
 
 Import to Letterboxd
 
@@ -49,15 +52,22 @@ Go to your profile settings → Import & Export → upload series_only.txt.
 
 This will add all the shows you’ve watched.
 
-Note: Some titles still won’t import because Letterboxd simply doesn’t have them in its database.
+⚠️ Note: Some titles still won’t import because Letterboxd simply doesn’t have them in its database.
 
 Example
+
 Input:
+
 American Primeval: Limited Series: Episode 4, 1/26/2025
 Cunk on Life, 1/19/2025
 American Primeval: Limited Series: Episode 1, 1/18/2025
+
 
 After import (step 3) → Cunk on Life is already in Letterboxd.
 After script (step 4) → American Primeval is added.
 
 Final combined list on Letterboxd includes both movies and shows.
+
+
+
+
